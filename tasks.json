@@ -1,0 +1,6 @@
+[
+  {"teamID": 1, "task": "Do something amazing", "points": 2},
+  {"teamID": 2, "task": "Do something amazing", "points": 10},
+  {"teamID": 1, "task": "Do something amazing", "points": 3},
+  {"teamID": 1, "task": "Do something amazing", "points": 5}
+]
