@@ -10,12 +10,12 @@ import java.util.List;
 @RestController
 public class TeamDataController {
 
-    @GetMapping("/teams")
+    @GetMapping("/api/teams")
     public List<Team> teams(String name) {
         return Team.deserializeTeams();
     }
 
-    @GetMapping("/tasks")
+    @GetMapping("/api/tasks")
     public List<TeamTask> tasks(String name) {
         return TeamTask.deserializeTasks();
     }
