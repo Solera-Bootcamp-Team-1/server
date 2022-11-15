@@ -14,13 +14,14 @@ val tasksFile: File = File("tasks.json")
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Serializable
 data class TeamTask(
-        val teamID: Int,
-        val task: String,
-        val points: Int
+  val teamID: Int,
+  val task: String,
+  val points: Int
 ) {
-        companion object {
-                @JvmStatic fun deserializeTasks(): List<TeamTask> {
-                        return Json.decodeFromStream(tasksFile.inputStream())
-                }
-        }
+  companion object {
+    @JvmStatic
+    fun deserializeTasks(): List<TeamTask> {
+      return Json.decodeFromStream(tasksFile.inputStream())
+    }
+  }
 }
